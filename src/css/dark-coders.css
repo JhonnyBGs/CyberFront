@@ -1,0 +1,69 @@
+.coders-grid {
+  padding: 10px;
+}
+.coders-card {
+  align-self: auto;
+  width: 100%;
+  margin: .5rem 0;
+  padding: 5px;
+}
+
+.card-titlee{
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.coders-card .card-title {
+  font-size: 1.25rem;
+  text-align: center;
+  text-shadow: #003 2px 2px;
+}
+
+.card-content img {
+  margin-left: 25%;
+  align-items: center;
+  max-width: 50%;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.card-actions {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  text-align: center;
+  align-content: center;
+  padding: .25rem;
+  margin-left: 1rem;
+  color: var(--ligth-color);
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 480px) {
+  .coders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  .coders-card .card-title {
+    text-align: center; 
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 560px) {
+  .coders-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .coders-card .card-title {
+        font-size: 1.25rem;
+  }
+}
